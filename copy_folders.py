@@ -12,6 +12,9 @@
 # - This is a fast build prototype / proof of concept. I know how bad it is to have everything hard coded.
 # - I belive this does not work if the files or folders currently exist. Need to encapusate all logic in try catch.
 
+# - Keep in mind when Adding speadsheet, get the names from a file, Speadsheet name -> Conversion Name.
+# - Speadsheet name changes
+
 import os
 from shutil import copy
 from shutil import rmtree
@@ -19,7 +22,7 @@ from shutil import rmtree
 path = "/Users/bastianawischus/Documents/Git/work_automation/"
 #path = os.getcwd
 def createFolder():
-    print(path)
+    #print(path)
     os.mkdir(path + "Folder1")
     os.mkdir(path + "Folder2")
     os.mkdir(path + "Folder3")
@@ -57,8 +60,8 @@ def cleanUpFolders():
     rmtree(path + "Folder4")
     rmtree(path + "Folder5")
 
-createFolder()
-copyFiles()
-changeFileName()
-copyHome()
-cleanUpFolders()
+#createFolder()
+#copyFiles()
+#changeFileName()
+#copyHome()
+#cleanUpFolders()
