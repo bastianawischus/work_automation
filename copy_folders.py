@@ -12,12 +12,9 @@
 # - This is a fast build prototype / proof of concept. I know how bad it is to have everything hard coded.
 # - I belive this does not work if the files or folders currently exist. Need to encapusate all logic in try catch.
 
-
-
 import os
 from shutil import copy
 from shutil import rmtree
-
 
 path = "/Users/bastianawischus/Documents/Git/work_automation/"
 #path = os.getcwd
@@ -59,9 +56,6 @@ def cleanUpFolders():
     rmtree(path + "Folder3")
     rmtree(path + "Folder4")
     rmtree(path + "Folder5")
-    
-
-    
 
 createFolder()
 copyFiles()
